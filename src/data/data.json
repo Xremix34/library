@@ -1,0 +1,4 @@
+[
+    { "id": 1, "titulo": "Fundamentos do React", "autor": "Matheus Battisti", "ano": 2007, "imagem":"https://horadecodar.com.br/wp-content/uploads/2022/04/Fundamentos-do-React.png" },
+  { "id": 2, "titulo": "React Aprenda Praticando", "autor": "Maurício Maujor", "ano": 2015, "imagem":"https://s3.novatec.com.br/capas-ampliadas/capa-ampliada-9786586057393.jpg" }
+]

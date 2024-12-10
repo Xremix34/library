@@ -1,0 +1,27 @@
+import{useState} from 'react'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Home from './pages/Home/Home'
+import Create from './pages/Create/Create'
+import View from './pages/View/View'
+import Edit from './pages/Editar/Edit'
+import data from './data/data.json'
+
+import './App.css'
+
+function App() {
+const [livros, setLivros]=useState(data)
+
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home livros={livros} setLivros={setLivros}/>} />
+        <Route path="/create" element={<Create livros={livros} setLivros={setLivros}/>} />
+        <Route path="/view/:id" element={<View livros={livros}/>} />
+        <Route path="/edit/:id" element={<Edit livros={livros} setLivros={setLivros}/>} />
+     </Routes>
+    </Router>
+    
+  )
+}
+
+export default App
